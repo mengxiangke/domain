@@ -1,0 +1,24 @@
+﻿<Window x:Class="domain.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:domain"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="查询" HorizontalAlignment="Left" Margin="177,105,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Label Content="请输入域名&#xD;&#xA;" HorizontalAlignment="Left" Margin="23,26,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="result" HorizontalAlignment="Left" Height="387" Margin="425,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332" TextChanged="TextBox_TextChanged_1" Text="查询结果"/>
+        <TextBox x:Name="houzhui" HorizontalAlignment="Left" Height="23" Margin="93,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170"/>
+        <CheckBox x:Name="much" Content="批量" HorizontalAlignment="Left" Margin="93,71,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.87,-0.28"/>
+        <ComboBox x:Name="list" HorizontalAlignment="Left" Margin="280,26,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem Content=".com" HorizontalAlignment="Left" Width="118" Selected="ComboBoxItem_Selected" IsSelected="True"/>
+            <ComboBoxItem Content=".me" HorizontalAlignment="Left" Width="118" Selected="ComboBoxItem_Selected"/>
+            <ComboBoxItem Content=".net" HorizontalAlignment="Left" Width="118" Selected="ComboBoxItem_Selected"/>
+            <ComboBoxItem Content="其他" HorizontalAlignment="Left" Width="118" Selected="ComboBoxItem_Selected"/>
+
+        </ComboBox>
+
+    </Grid>
+</Window>
